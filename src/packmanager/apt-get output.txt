@@ -1,0 +1,127 @@
+NOTE: This is only a simulation!
+      apt-get needs root privileges for real execution.
+      Keep also in mind that locking is deactivated,
+      so don't depend on the relevance to the real current situation!
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Calculating upgrade... Done
+The following packages were automatically installed and are no longer required:
+  linux-cloud-tools-4.10.0-40 linux-cloud-tools-4.10.0-40-generic
+Use 'apt autoremove' to remove them.
+The following NEW packages will be installed:
+  linux-cloud-tools-4.10.0-42 linux-cloud-tools-4.10.0-42-generic linux-headers-4.10.0-42 linux-headers-4.10.0-42-generic linux-image-4.10.0-42-generic
+  linux-image-extra-4.10.0-42-generic
+The following packages will be upgraded:
+  apport cloud-init curl distro-info-data dnsmasq-base isc-dhcp-client isc-dhcp-common klibc-utils libcurl3 libcurl3-gnutls libdb5.3 libklibc libpython2.7
+  libpython2.7-minimal libpython2.7-stdlib libpython3.5 libpython3.5-minimal libpython3.5-stdlib libssl1.0.0 libwbclient0 libxml2 linux-cloud-tools-common
+  linux-cloud-tools-virtual linux-firmware linux-headers-generic linux-headers-virtual linux-image-extra-virtual linux-image-generic linux-image-virtual
+  linux-virtual lxcfs openssl python-samba python2.7 python2.7-minimal python3-apport python3-problem-report python3.5 python3.5-minimal resolvconf rsync
+  samba-common samba-common-bin samba-libs snapd squashfs-tools unattended-upgrades
+47 upgraded, 6 newly installed, 0 to remove and 0 not upgraded.
+Inst libpython3.5 [3.5.3-1ubuntu0~17.04.1] (3.5.3-1ubuntu0~17.04.2 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst libssl1.0.0 [1.0.2g-1ubuntu11.3] (1.0.2g-1ubuntu11.4 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst python3.5 [3.5.3-1ubuntu0~17.04.1] (3.5.3-1ubuntu0~17.04.2 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst libpython3.5-stdlib [3.5.3-1ubuntu0~17.04.1] (3.5.3-1ubuntu0~17.04.2 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst python3.5-minimal [3.5.3-1ubuntu0~17.04.1] (3.5.3-1ubuntu0~17.04.2 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst libpython3.5-minimal [3.5.3-1ubuntu0~17.04.1] (3.5.3-1ubuntu0~17.04.2 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst libdb5.3 [5.3.28-12] (5.3.28-12ubuntu0.1 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf libdb5.3 (5.3.28-12ubuntu0.1 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst python2.7 [2.7.13-2] (2.7.13-2ubuntu0.1 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst libpython2.7 [2.7.13-2] (2.7.13-2ubuntu0.1 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst libpython2.7-stdlib [2.7.13-2] (2.7.13-2ubuntu0.1 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst python2.7-minimal [2.7.13-2] (2.7.13-2ubuntu0.1 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst libpython2.7-minimal [2.7.13-2] (2.7.13-2ubuntu0.1 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst python-samba [2:4.5.8+dfsg-0ubuntu0.17.04.7] (2:4.5.8+dfsg-0ubuntu0.17.04.8 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst samba-common-bin [2:4.5.8+dfsg-0ubuntu0.17.04.7] (2:4.5.8+dfsg-0ubuntu0.17.04.8 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst samba-libs [2:4.5.8+dfsg-0ubuntu0.17.04.7] (2:4.5.8+dfsg-0ubuntu0.17.04.8 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst libwbclient0 [2:4.5.8+dfsg-0ubuntu0.17.04.7] (2:4.5.8+dfsg-0ubuntu0.17.04.8 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst samba-common [2:4.5.8+dfsg-0ubuntu0.17.04.7] (2:4.5.8+dfsg-0ubuntu0.17.04.8 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [all])
+Inst distro-info-data [0.33ubuntu0.3] (0.33ubuntu0.4 Ubuntu:17.04/zesty-updates [all])
+Inst isc-dhcp-client [4.3.5-3ubuntu1] (4.3.5-3ubuntu1.1 Ubuntu:17.04/zesty-updates [amd64])
+Inst isc-dhcp-common [4.3.5-3ubuntu1] (4.3.5-3ubuntu1.1 Ubuntu:17.04/zesty-updates [amd64])
+Inst klibc-utils [2.0.4-8ubuntu4] (2.0.4-8ubuntu4.1 Ubuntu:17.04/zesty-updates [amd64]) []
+Inst libklibc [2.0.4-8ubuntu4] (2.0.4-8ubuntu4.1 Ubuntu:17.04/zesty-updates [amd64])
+Inst resolvconf [1.79ubuntu4] (1.79ubuntu4.1 Ubuntu:17.04/zesty-updates [all])
+Inst libcurl3-gnutls [7.52.1-4ubuntu1.3] (7.52.1-4ubuntu1.4 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst libxml2 [2.9.4+dfsg1-2.2ubuntu0.1] (2.9.4+dfsg1-2.2ubuntu0.3 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst openssl [1.0.2g-1ubuntu11.3] (1.0.2g-1ubuntu11.4 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst rsync [3.1.2-1] (3.1.2-1ubuntu0.1 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst python3-problem-report [2.20.4-0ubuntu4.8] (2.20.4-0ubuntu4.10 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [all])
+Inst python3-apport [2.20.4-0ubuntu4.8] (2.20.4-0ubuntu4.10 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [all])
+Inst apport [2.20.4-0ubuntu4.8] (2.20.4-0ubuntu4.10 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [all])
+Inst curl [7.52.1-4ubuntu1.3] (7.52.1-4ubuntu1.4 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst libcurl3 [7.52.1-4ubuntu1.3] (7.52.1-4ubuntu1.4 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst dnsmasq-base [2.76-5ubuntu0.1] (2.76-5ubuntu0.2 Ubuntu:17.04/zesty-updates [amd64])
+Inst linux-cloud-tools-common [4.10.0-40.44] (4.10.0-42.46 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [all])
+Inst linux-cloud-tools-4.10.0-42 (4.10.0-42.46 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst linux-cloud-tools-4.10.0-42-generic (4.10.0-42.46 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst linux-cloud-tools-virtual [4.10.0.40.40] (4.10.0.42.42 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst linux-firmware [1.164.1] (1.164.2 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [all])
+Inst linux-headers-4.10.0-42 (4.10.0-42.46 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [all])
+Inst linux-headers-4.10.0-42-generic (4.10.0-42.46 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst linux-image-4.10.0-42-generic (4.10.0-42.46 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst linux-virtual [4.10.0.40.40] (4.10.0.42.42 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst linux-image-virtual [4.10.0.40.40] (4.10.0.42.42 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst linux-headers-virtual [4.10.0.40.40] (4.10.0.42.42 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst linux-headers-generic [4.10.0.40.40] (4.10.0.42.42 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst linux-image-extra-4.10.0-42-generic (4.10.0-42.46 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst linux-image-extra-virtual [4.10.0.40.40] (4.10.0.42.42 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64]) []
+Inst linux-image-generic [4.10.0.40.40] (4.10.0.42.42 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Inst lxcfs [2.0.7-0ubuntu1~17.04.2] (2.0.8-0ubuntu1~17.04.2 Ubuntu:17.04/zesty-updates [amd64])
+Inst squashfs-tools [1:4.3-3ubuntu2] (1:4.3-3ubuntu2.17.04.1 Ubuntu:17.04/zesty-updates [amd64])
+Inst snapd [2.28.5+17.04] (2.29.4.2+17.04 Ubuntu:17.04/zesty-updates [amd64])
+Inst unattended-upgrades [0.93.1ubuntu2.3] (0.93.1ubuntu2.4 Ubuntu:17.04/zesty-updates [all])
+Inst cloud-init [17.1-27-geb292c18-0ubuntu1~17.04.1] (17.1-46-g7acc9e68-0ubuntu1~17.04.1 Ubuntu:17.04/zesty-updates [all])
+Conf libpython3.5 (3.5.3-1ubuntu0~17.04.2 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf libssl1.0.0 (1.0.2g-1ubuntu11.4 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf python3.5 (3.5.3-1ubuntu0~17.04.2 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf libpython3.5-stdlib (3.5.3-1ubuntu0~17.04.2 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf python3.5-minimal (3.5.3-1ubuntu0~17.04.2 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf libpython3.5-minimal (3.5.3-1ubuntu0~17.04.2 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf python2.7 (2.7.13-2ubuntu0.1 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf libpython2.7 (2.7.13-2ubuntu0.1 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf libpython2.7-stdlib (2.7.13-2ubuntu0.1 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf python2.7-minimal (2.7.13-2ubuntu0.1 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf libpython2.7-minimal (2.7.13-2ubuntu0.1 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf python-samba (2:4.5.8+dfsg-0ubuntu0.17.04.8 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf samba-common-bin (2:4.5.8+dfsg-0ubuntu0.17.04.8 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf samba-libs (2:4.5.8+dfsg-0ubuntu0.17.04.8 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf libwbclient0 (2:4.5.8+dfsg-0ubuntu0.17.04.8 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf samba-common (2:4.5.8+dfsg-0ubuntu0.17.04.8 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [all])
+Conf distro-info-data (0.33ubuntu0.4 Ubuntu:17.04/zesty-updates [all])
+Conf isc-dhcp-client (4.3.5-3ubuntu1.1 Ubuntu:17.04/zesty-updates [amd64])
+Conf isc-dhcp-common (4.3.5-3ubuntu1.1 Ubuntu:17.04/zesty-updates [amd64])
+Conf klibc-utils (2.0.4-8ubuntu4.1 Ubuntu:17.04/zesty-updates [amd64])
+Conf libklibc (2.0.4-8ubuntu4.1 Ubuntu:17.04/zesty-updates [amd64])
+Conf resolvconf (1.79ubuntu4.1 Ubuntu:17.04/zesty-updates [all])
+Conf libcurl3-gnutls (7.52.1-4ubuntu1.4 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf libxml2 (2.9.4+dfsg1-2.2ubuntu0.3 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf openssl (1.0.2g-1ubuntu11.4 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf rsync (3.1.2-1ubuntu0.1 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf python3-problem-report (2.20.4-0ubuntu4.10 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [all])
+Conf python3-apport (2.20.4-0ubuntu4.10 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [all])
+Conf apport (2.20.4-0ubuntu4.10 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [all])
+Conf curl (7.52.1-4ubuntu1.4 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf libcurl3 (7.52.1-4ubuntu1.4 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf dnsmasq-base (2.76-5ubuntu0.2 Ubuntu:17.04/zesty-updates [amd64])
+Conf linux-cloud-tools-common (4.10.0-42.46 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [all])
+Conf linux-cloud-tools-4.10.0-42 (4.10.0-42.46 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf linux-cloud-tools-4.10.0-42-generic (4.10.0-42.46 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf linux-cloud-tools-virtual (4.10.0.42.42 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf linux-firmware (1.164.2 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [all])
+Conf linux-headers-4.10.0-42 (4.10.0-42.46 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [all])
+Conf linux-headers-4.10.0-42-generic (4.10.0-42.46 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf linux-image-4.10.0-42-generic (4.10.0-42.46 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf linux-virtual (4.10.0.42.42 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf linux-image-virtual (4.10.0.42.42 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf linux-headers-virtual (4.10.0.42.42 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf linux-headers-generic (4.10.0.42.42 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf linux-image-extra-4.10.0-42-generic (4.10.0-42.46 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf linux-image-extra-virtual (4.10.0.42.42 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf linux-image-generic (4.10.0.42.42 Ubuntu:17.04/zesty-updates, Ubuntu:17.04/zesty-security [amd64])
+Conf lxcfs (2.0.8-0ubuntu1~17.04.2 Ubuntu:17.04/zesty-updates [amd64])
+Conf squashfs-tools (1:4.3-3ubuntu2.17.04.1 Ubuntu:17.04/zesty-updates [amd64])
+Conf snapd (2.29.4.2+17.04 Ubuntu:17.04/zesty-updates [amd64])
+Conf unattended-upgrades (0.93.1ubuntu2.4 Ubuntu:17.04/zesty-updates [all])
+Conf cloud-init (17.1-46-g7acc9e68-0ubuntu1~17.04.1 Ubuntu:17.04/zesty-updates [all])
