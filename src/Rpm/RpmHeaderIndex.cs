@@ -12,16 +12,18 @@ namespace PackageManagement.Rpm
 
         public int Count;
 
-        public static RpmHeaderIndex FromBinaryReader(BinaryReader reader)
+        public static RpmHeaderIndex FromStream(Stream input)
         {
-            var converter = new ByteConverter(false);
-            return new RpmHeaderIndex
+            using (var reader = new BinaryReader2(input, false))
             {
-                Tag = converter.ToInt32(reader.ReadBytes(4), 0),
-                Type = (IndexType)converter.ToInt32(reader.ReadBytes(4), 0),
-                Offset = converter.ToInt32(reader.ReadBytes(4), 0),
-                Count = converter.ToInt32(reader.ReadBytes(4), 0),
-            };
+                return new RpmHeaderIndex
+                {
+                    Tag = reader.ReadInt32(),
+                    Type = (IndexType)reader.ReadInt32(),
+                    Offset = reader.ReadInt32(),
+                    Count = reader.ReadInt32(),
+                };
+            }
         }
     }
 }

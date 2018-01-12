@@ -27,33 +27,30 @@ namespace PackageManagement.Rpm
         // size of 16
         public char[] Reserved;
 
-        public static RpmLead FromBinaryReader(BinaryReader reader)
+        public static RpmLead FromStream(Stream input)
         {
-            var lead = new RpmLead
+            using (var reader = new BinaryReader2(input, false))
             {
-                Magic = reader.ReadBytes(4),
-                Major = reader.ReadByte(),
-                Minor = reader.ReadByte(),
-                Type = (PackageType)ReadInt16(reader),
-                ArchNum = ReadInt16(reader),
-                Name = NullTerminatedCharArray.GetString(reader.ReadChars(66)),
-                OsNum = ReadInt16(reader),
-                SignatureType = ReadInt16(reader),
-                Reserved = reader.ReadChars(16),
-            };
+                var lead = new RpmLead
+                {
+                    Magic = reader.ReadBytes(4),
+                    Major = reader.ReadByte(),
+                    Minor = reader.ReadByte(),
+                    Type = (PackageType)reader.ReadInt16(),
+                    ArchNum = reader.ReadInt16(),
+                    Name = NullTerminatedCharArray.GetString(reader.ReadChars(66)),
+                    OsNum = reader.ReadInt16(),
+                    SignatureType = reader.ReadInt16(),
+                    Reserved = reader.ReadChars(16),
+                };
 
-            if (!ArrayCompare.ArrayEquals(lead.Magic, MagicBytes))
-            {
-                throw new InvalidOperationException("Magic bytes not found in Lead");
+                if (!ArrayCompare.ArrayEquals(lead.Magic, MagicBytes))
+                {
+                    throw new InvalidOperationException("Magic bytes not found in Lead");
+                }
+
+                return lead;
             }
-
-            return lead;
-        }
-
-        private static short ReadInt16(BinaryReader reader)
-        {
-            var converter = new ByteConverter(false);
-            return converter.ToInt16(reader.ReadBytes(2), 0);
         }
     }
 }
