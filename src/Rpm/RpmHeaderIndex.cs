@@ -6,7 +6,7 @@ namespace PackageManagement.Rpm
     {
         public int Tag;
 
-        public IndexType Type;
+        public TagType Type;
 
         public int Offset;
 
@@ -19,7 +19,7 @@ namespace PackageManagement.Rpm
                 return new RpmHeaderIndex
                 {
                     Tag = reader.ReadInt32(),
-                    Type = (IndexType)reader.ReadInt32(),
+                    Type = (TagType)reader.ReadInt32(),
                     Offset = reader.ReadInt32(),
                     Count = reader.ReadInt32(),
                 };
