@@ -1,4 +1,4 @@
-namespace PackageManagement.Rpm
+namespace PackageManagement.Rpm.Library
 {
     public static class ArrayCompare
     {

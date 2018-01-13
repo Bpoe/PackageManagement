@@ -1,4 +1,4 @@
-﻿namespace PackageManagement.Rpm
+﻿namespace PackageManagement.Rpm.Library
 {
     using System.Collections.Generic;
     using System.IO;

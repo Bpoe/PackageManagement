@@ -1,4 +1,4 @@
-namespace PackageManagement.Rpm
+namespace PackageManagement.Rpm.Library
 {
     using System;
     public static class NullTerminatedCharArray

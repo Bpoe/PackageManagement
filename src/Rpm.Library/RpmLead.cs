@@ -1,4 +1,4 @@
-namespace PackageManagement.Rpm
+namespace PackageManagement.Rpm.Library
 {
     using System;
     using System.IO;
@@ -26,6 +26,18 @@ namespace PackageManagement.Rpm
 
         // size of 16
         public char[] Reserved;
+
+        public void Write(Stream output)
+        {
+            throw new NotImplementedException();
+            var converter = new ByteConverter(false);
+            output.Write(this.Magic, 0, this.Magic.Length);
+            output.WriteByte(this.Major);
+            output.WriteByte(this.Minor);
+            output.Write(converter.GetBytes((short)this.Type), 0, 2);
+            output.Write(converter.GetBytes(this.ArchNum), 0, 2);
+            //output.Write(converter.GetBytes(this.Name);
+        }
 
         public static RpmLead FromStream(Stream input)
         {

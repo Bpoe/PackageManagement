@@ -3,14 +3,32 @@
     using System;
     using System.IO;
     using System.Linq;
+    using Library;
 
     class Program
     {
         static void Main(string[] args)
         {
+            if (args.Length != 1
+                || args[0].StartsWith("/")
+                || args[0].StartsWith("-"))
+            {
+                Console.WriteLine("Displays information about a RPM package");
+                Console.WriteLine();
+                Console.WriteLine("Usage: rpminfo source");
+                return;
+            }
+
+            var filePath = args[0];
+
+            if (!File.Exists(filePath))
+            {
+                Console.WriteLine("File not found");
+                return;
+            }
+
             var package = new RpmPackage();
-            const string FilePath = @"C:\Users\bpoe\Downloads\rh-dotnet20-dotnet-runtime-2.0-2.0.3-4.1.el7.centos.x86_64.rpm";
-            using (var file = File.Open(FilePath, FileMode.Open))
+            using (var file = File.Open(filePath, FileMode.Open))
             {
                 package = RpmPackage.FromStream(file);
             }
