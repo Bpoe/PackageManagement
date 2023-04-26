@@ -72,7 +72,7 @@
             var remaining = bytesRead % 8;
             for (var x = 0; x < remaining; x++)
             {
-                input.ReadByte();
+                _ = input.ReadByte();
             }
 
             return header;
